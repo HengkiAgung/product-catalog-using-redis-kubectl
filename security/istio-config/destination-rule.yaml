@@ -1,9 +1,9 @@
-apiVersion: networking.istio.io/v1beta1
+apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: service-destination-rule
+  name: product-catalog-service
 spec:
-  host: "*.svc.cluster.local"
+  host: product-catalog-service
   trafficPolicy:
     tls:
       mode: ISTIO_MUTUAL
